@@ -1,0 +1,14 @@
+.longEnough {
+    max-height: 220px;
+    width: 350px;
+    overflow: auto;
+  }
+  .mCustomScrollbar1 .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+    background-color: green !important;
+  }
+  .mCustomScrollbar2 .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+    background-color: blue !important;
+  }
+  .mCustomScrollbar3 .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+    background-color: purple !important;
+  }

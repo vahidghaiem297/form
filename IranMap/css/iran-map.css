@@ -1,0 +1,222 @@
+
+.pos-r {
+    position: relative;
+  }
+  
+  /*----------*/
+  .map .border path ,
+  .map .island path {
+      fill: #787776;
+  }
+  
+  .map .province path{
+      fill: #fff;
+  }
+  .map .sea path ,
+  .map .lake path{
+      fill: #8fd8f8;
+  }
+  
+  .map .province path:hover ,
+  .map .island path:hover ,
+  .map .province path.hover ,
+  .map .island path.hover {
+      fill: #5eca6d !important;
+      cursor: pointer;
+  }
+  
+  /**/
+  
+  /*---------*/
+  .places {
+      margin-top: 20px;
+  }
+  .places .item{
+      display: block;
+      background: #fff;
+      border: 1px solid rgba(0,0,0,0.1);
+      border-radius: 15px;
+      overflow: hidden;
+      margin-bottom: 15px;
+  }
+  .places .panel {
+      padding: 15px 5px;
+  }
+  .places .item *{
+      color: #717171;
+  }
+  .places .item .title{
+      font-family: calibri-bold;
+      font-size: 15pt;
+  }
+  .places .panel > div{
+      margin-bottom: 5px;
+  }
+  .places .panel .description{
+      font-size: 11pt;
+  }
+  .places .item img{
+      width: 100%;
+  }
+  
+  /* in medium */
+  @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+      .places .item .title{
+          font-size: 12pt;
+      }
+      .places .panel .description{
+          font-size: 9pt;
+      }
+  }
+  
+  /*in small */
+  @media screen and (max-width: 40em){
+      .places .item {
+          min-height: 190px;
+      }
+      .places .columns{
+          padding-right: 5px;
+          padding-left: 5px;
+      }
+      .places .item .title{
+          font-size: 9pt;
+      }
+      .places .panel .description{
+          font-size: 8pt;
+      }
+  }
+  .show-title {
+      display: none;
+      position: absolute;
+      background-color: #333;
+      color: #fff;
+      margin: 0!important;
+      padding: 0 5px;
+      text-align: center;
+      line-height: 26px;
+      border-radius: 2px;
+      -moz-border-radius: 2px;
+      -webkit-border-radius: 2px;
+      opacity: .8;
+  }
+  
+  
+  
+  /*----------- locations ----------*/
+  
+  .map_marker a.marker{
+      position: absolute;
+      cursor: pointer;
+      font-size: 10pt;
+      color: #717171;
+  }
+  .map_marker a.marker:before{
+      content: "";
+      display: inline-block;
+      background: #ff6348;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      -webkit-animation-name: shadow;
+      -webkit-animation-duration: 3s;
+      -webkit-animation-iteration-count: infinite;
+      animation-name: shadow;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+      margin: -15px 0 -1px 20px;
+      position: absolute;
+  }
+  @-webkit-keyframes shadow{
+      0% {
+          box-shadow: 0 0 0 1px rgba(255, 99, 72,0.45);
+      }
+      50%{
+          box-shadow: 0 0 0 5px rgba(255, 99, 72, 0.2);
+      }
+      100% {
+          box-shadow: 0 0 0 1px rgba(255, 99, 72, 0.45);
+      }
+  }
+  @keyframes shadow {
+      0% {
+          box-shadow: 0 0 0 1px rgba(255, 99, 72, 0.45);
+      }
+      50%{
+          box-shadow: 0 0 0 5px rgba(255, 99, 72, 0.2);
+      }
+      100% {
+          box-shadow: 0 0 0 1px rgba(255, 99, 72, 0.45);
+      }
+  }
+  /*states*/
+  .map_marker .marker.mashhad {
+      top: 25%;
+      right: 23%;
+  }
+  .map_marker .marker.Isfahan{
+      top: 43%;
+      right: 59%;
+  }
+  .map_marker .marker.shiraz{
+      top: 68%;
+      right: 53%;
+  }
+  
+  /* in small */
+  @media screen and (max-width: 40em){
+      .map_marker .marker{
+          font-size: 0pt !important;
+      }
+      .map_marker a.marker:before{
+          width: 4px !important;
+          height: 4px !important;
+          margin: 0 !important;
+          -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+      }
+      @-webkit-keyframes shadow{
+          from {
+              box-shadow: 0 0 0 1px rgba(255, 99, 72, 0.35);
+          }
+          to {
+              box-shadow: 0 0 0 3px rgba(255, 99, 72, 0.1);
+          }
+      }
+      @keyframes shadow {
+          from {
+              box-shadow: 0 0 0 1px rgba(255, 99, 72, 0.35);
+          }
+          to {
+              box-shadow: 0 0 0 3px rgba(255, 99, 72, 0.1);
+          }
+      }
+      .states .title{
+          font-size: 12pt;
+          font-family: calibri-bold;
+          color: #5eca6d;
+      }
+      .states a{
+          color: #717171;
+          font-size: 10pt;
+      }
+      .states a .icon{
+          color: #5eca6d;
+      }
+  }
+  
+  .list{
+    visibility: hidden;
+    display: none;
+  }
+
+  .iran-map{
+    width: 100% !important;
+    height: 100% !important;
+  }
+  .mapAgente {
+    background-image: url(/img/bgn.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin-top: 25px;
+}
